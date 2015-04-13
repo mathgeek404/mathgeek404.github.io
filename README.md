@@ -1,1 +1,2 @@
-# mygithubpage
+# smandala.github.io
+
