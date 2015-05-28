@@ -1,31 +1,119 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta http-equiv=Refresh content="0;url=/construct/">
+    <!-- Keep these tags first -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">  
+    
+    <!--CONSTRUCTION-->
+    <!-- <meta http-equiv=Refresh content="0;url=/construct/"> -->
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    
     <link href="css/styling.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="wrapper">
-      <div id="main_section">
-        <div id="content">
-          <div id="content_background">
+    
+      
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#main">Sahit Mandala</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#aboutme">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
           </div>
         </div>
+      </nav>
+      
+      <div id="main_section" class="container">
+        <div class="content background-clear tabs">
+            
+            <div data-role="page" id="main" class="tab tab-active">
+                <div data-role="header">
+                    <h1>Where's Your Will To Be Weird?</h1>
+                </div>
+            </div>
+            
+            <div data-role="page" id="aboutme" class="tab">
+                <div data-role="header">
+                    <h1> About Me </h1>
+                </div>
+                <div id="bio" data-role="main">
+                    <p>Hellow World!</p>
+                </div>
+            </div>
+            
+            <div data-role="page" id="projects" class="tab">
+                <div data-role="header">
+                    <h1>Projects</h1>
+                </div>
+                <div id="bio" style="background:black;color:white">
+                    <p>Proj</p>
+                </div>
+            </div>
+            
+            <div data-role="page" id="portfolio" class="tab">
+                <div data-role="header">
+                    <h1> Portfolio </h1>
+                </div>
+            </div>
+            
+            <div data-role="page" id="contact" class="tab">
+                <div data-role="header">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+            
+            
+          
+        </div>
       </div>
+      
 
-      <div id="footer">
-        <div class="background_div"></div>
-	      <div id="attribution_tag">
-		      <div about='https://farm8.static.flickr.com/7402/9618450508_ed9bc1542c_m.jpg'>
-		        <a rel='license' href='http://creativecommons.org/licenses/by/2.0/' target='_blank'>
-			        <img src='http://i.creativecommons.org/l/by/2.0/80x15.png' alt='Creative Commons Creative Commons Attribution 2.0 Generic License' title='Creative Commons Creative Commons Attribution 2.0 Generic License' border='0' align='left'>
-            </a>
-            &nbsp; &nbsp;Background: &nbsp;
-            <a href='https://www.flickr.com/people/99429139@N06/' target='_blank'>&nbsp;</a>
-            <a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/99429139@N06/' target='_blank'>Tadas Balciunas</a>
-            <a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a>
-		      </div>      
-	      </div>
-	    </div>
-	  </div>
+      <footer class="footer footer-background">
+        <div class="container">
+          <div id="attribution_tag">
+            <div about='https://farm8.static.flickr.com/7402/9618450508_ed9bc1542c_m.jpg'>
+              <a rel='license' href='http://creativecommons.org/licenses/by/2.0/' target='_blank'>
+                <img src='http://i.creativecommons.org/l/by/2.0/80x15.png' alt='Creative Commons Creative Commons Attribution 2.0 Generic License' title='Creative Commons Creative Commons Attribution 2.0 Generic License' border='0' align='left'>
+              </a>
+              &nbsp; &nbsp;Background: &nbsp;
+              <a href='https://www.flickr.com/people/99429139@N06/' target='_blank'>&nbsp;</a>
+              <a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/99429139@N06/' target='_blank'>Tadas Balciunas</a>
+              <a href='http://www.imagecodr.org/' target='_blank'>&nbsp;</a>
+            </div>
+          </div>      
+        </div>
+      </footer>
+    
+    <!-- JavaScript, JQuery, Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+       $(document).ready(function() {
+           $('.navbar a').on('click', function(ev) {
+               var attr = $(this).attr('href');
+               console.log(attr);
+               $('.tabs '+ attr).show().siblings().hide();
+               ev.preventDefault();
+               });
+           });
+    </script>
   </body>
 </html>
