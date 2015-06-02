@@ -122,8 +122,8 @@ body {
 
 .tab > .text-content {
   padding: 10px;
-  background: rgba(0,0,0,0.5);
-  color:white;
+  background: rgba(222,222,222,0.5);
+  color:black;
   
   overflow:auto;
 }
