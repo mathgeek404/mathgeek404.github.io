@@ -50,6 +50,7 @@
             </div>
             
             <div id="aboutme" class="section">
+				<a id="aboutme_lnk" class="smooth"></a>
                 <div data-role="header">
                     <h1>About Me</h1>
                 </div>
@@ -170,9 +171,15 @@
                var attr = $(this).attr('href');
                console.log(attr);
                $('.tabs '+ attr).show().siblings().hide();
+               
+               $('html, body').animate({
+				scrollTop: $(attr).offset().top - 50
+				}, 1000);
+               
                ev.preventDefault();
                });
            });
+
     </script>
   </body>
 </html>
