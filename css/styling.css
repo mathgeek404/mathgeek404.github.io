@@ -38,89 +38,6 @@ body{
 	padding: 1px;
 }
 
-#main {
-	height:100vh;
-	width: 100%;
-	margin: 0 0 0 0;
-	overflow: hidden;
-	
-   background: black url(../images/vista.jpg) no-repeat center center scroll;
-  
-  
-  background-size: cover;
-  
-  /* background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   * */
-}
-
-#main .title {
-	margin-top: 10%;
-	font-family: 'Open Sans', Arial;
-	
-}
-
-#main .pic {
-	border-radius: 50%;
-	margin: 0 auto;
-    width: 200px;
-    height: 200px;
-    
-	background-image: url(../images/mypic.jpg);
-	background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
-}
-
-#aboutme {
-   background-color: #777777;
-}
-
-#projects {
-   background-color: #999999;
-}
-
-#portfolio {
-   background-color:#777777;
-}
-
-#contact {
-   background-color:#999999;
-}
-
-
-.content_background {
-   position: absolute;
-   width: 100%;
-   background-color: rgba(0,0,0,0.5);;
-   
-}
-
-.content_background:after {
-   opacity: 0.5;
-}
-
-/* Portfolio content */
-.hack-bullet {
-  position: relative;
-}
-
-.hack-bullet:before {
-    content: "\f069";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-/*--adjust as necessary--*/
-    color: #000;
-    font-size: 18px;
-    padding-right: 0.5em;
-    position: absolute;
-    top: 10px;
-    left: 0;
-}
-
 
 
 .background-clear {
@@ -179,7 +96,131 @@ body{
   color:black;
   
   overflow:auto;
+}
+
+#main {
+	height:100vh;
+	width: 100%;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	
+   background: black url(../images/vista.jpg) no-repeat center center scroll;
   
+  
+  background-size: cover;
+  
+  /* background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   * */
+}
+
+#main .title {
+	margin-top: 10%;
+	font-family: 'Open Sans', Arial;
+	
+}
+
+#main .pic {
+	border-radius: 50%;
+	margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    
+	background-image: url(../images/mypic.jpg);
+	background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+#aboutme {
+   background-color: #777777;
+}
+
+.life-point {
+    width:100%;
+    
+    /*display: flex;*/
+    overflow:hidden;
+}
+
+.point-image {
+    width: 100px;
+    float:left;
+    
+    min-height: 100px;
+    margin: auto;
+}
+
+.point-content {
+    
+    overflow:hidden;
+    margin:auto;
+    border:2px dashed #ccc;
+    min-height:100px;
+}
+
+.point-content p {
+
+    font-size:16px;
+    /*font-size:1.5vw;*/
+}
+
+@media screen and (max-width: 400px) {
+   .point-image { 
+    float: none;
+    margin:auto; 
+    
+  }
+}
+
+
+
+#projects {
+   background-color: #999999;
+}
+
+#portfolio {
+   background-color:#777777;
+}
+
+#contact {
+   background-color:#999999;
+}
+
+
+.content_background {
+   position: absolute;
+   width: 100%;
+   background-color: rgba(0,0,0,0.5);;
+   
+}
+
+.content_background:after {
+   opacity: 0.5;
+}
+
+/* Portfolio content */
+.hack-bullet {
+  position: relative;
+}
+
+.hack-bullet:before {
+    content: "\f069";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+
   
   /* Sticky Footer */
 
