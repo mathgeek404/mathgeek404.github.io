@@ -1,3 +1,4 @@
+/*Main HTML Parts*/
 body{
    margin: 0 0 0 0;
    height: 100%;
@@ -28,17 +29,6 @@ body{
   /*box-sizing: border-box;*/
 }
 
-/*Section styling*/
-
-.section {
-
-	min-height:100vh;
-
-	margin: 0 0 0 0;
-	padding: 1px;
-}
-
-
 
 .background-clear {
    /*opacity: 0.5;*/
@@ -59,28 +49,42 @@ body{
 
 /* Section formating */
 
+.section {
+    
+    min-height:100vh;
+	margin: 0 0 0 0;
+	padding: 1px;
+}
+
 
 .section h1 {
   text-align:center;
   font-family: 'Quicksand', Ariel;
   font-weight: bold;
   line-height: 1.1;
-  
+  font-size: 50px;
   color:white;
 }
 
 .section h2 {
   text-align:center;
-  font-family: inherit;
+  font-family: 'Quicksand', Ariel;
   line-height: 1.1;
+  font-size: 42px;
   
   color:white;
 }
 
+.section h3 {
+  font-family: 'Quicksand', Ariel;
+  font-size: 36px;
+}
+
 .section p {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 1.4;
+  font-family: Calibri, Ariel;
   
   text-align: justify;
   text-justify: auto;
@@ -98,21 +102,34 @@ body{
   overflow:auto;
 }
 
+/*Main section*/
+
 #main {
 	height:100vh;
-	width: 100%;
+	width: 40%;
 	margin: 0 0 0 0;
 	overflow: hidden;
 	
-   background: black url(../images/vista.jpg) no-repeat center center scroll;
-  
-  
-  background-size: cover;
+    position:fixed;
+    float:left;
+    
+    background: black url(../images/vista.jpg) no-repeat center center scroll;
+    background-size: cover;
   
   /* background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center;
    * */
+}
+
+@media screen and (max-width: 1000px) {
+   #main { 
+    width:100%;
+    
+    float: none;
+    position: relative; 
+    
+  }
 }
 
 #main .title {
@@ -124,13 +141,31 @@ body{
 #main .pic {
 	border-radius: 50%;
 	margin: 0 auto;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     
 	background-image: url(../images/mypic.jpg);
 	background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
+}
+
+
+/* Other sections*/
+
+#other-sections {
+    width: 60%;
+    float:right;
+}
+
+@media screen and (max-width: 1000px) {
+  #other-sections {
+    float: none;
+    
+    width: 100%;
+    position: relative;
+    
+  }
 }
 
 #aboutme {
@@ -170,7 +205,6 @@ body{
    .point-image { 
     float: none;
     margin:auto; 
-    
   }
 }
 
@@ -185,7 +219,29 @@ body{
 }
 
 #contact {
+
+    min-height:30vh;
+    
    background-color:#999999;
+}
+
+#icons {
+    width: 100%;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+
+.contact-btn {
+    display: inline-block;
+    vertical-align: top;
+    
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    
+    text-decoration:none;
 }
 
 
