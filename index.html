@@ -117,7 +117,20 @@
                         <strong>ChallengePost: </strong><a href="http://challengepost.com/mathgeek404">www.challengepost.com/mathgeek404</a><br>
                     </address>
                     </span>
+                    
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#work-list" aria-expanded="false" aria-controls="collapseExample">
+                        <h2>Work/Research Experience</h2>
+                    </button>
+                    <div id="work-list" class="collapse">
+                    <h3><strong>Wildhacks 2014</strong></h3>
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-asterisk"></i><p>Theranod: A simulated theramin using an IMU-embedded ring.</p></li>
+                    </ul>
+                    </div>
+                    
+                    
                     <h2>Hackathons</h2>
+                    <div id="hack-list">
                     <h3><strong>Wildhacks 2014</strong></h3>
                     <ul class="fa-ul">
                         <li><i class="fa-li fa fa-asterisk"></i><p>Theranod: A simulated theramin using an IMU-embedded ring.</p></li>
@@ -154,6 +167,7 @@
                     <ul class="fa-ul">
                         <li><i class="fa-li fa fa-asterisk"></i><p>TYPE ME</p></li>
                     </ul>
+                    </div>
                     
 
                 </div>
@@ -163,17 +177,13 @@
                 <div data-role="header">
                     <h1>Contact</h1>
                 </div>
-                <div data-role="main" class="text-content">
+                <div data-role="main" class="text-content" style="text-align: center;">
                     <address>
                        <strong>Sahit Mandala (Steve)</strong><br>
+                       <strong>Phone: </strong><span>508-969-1080</span><br>
                        <br>
                     </address>
                     
-                    <address>
-                        <strong>Phone: </strong><span>508-969-1080</span><br>
-                        <strong>Email: </strong><a href="mailto:mandala@wisc.edu">mandala@wisc.edu</a><br>
-                        <strong>LinkedIn: </strong><a href="http://www.linkedin.com/in/smandala">www.linkedin.com/in/smandala</a><br>                        
-                    </address>
 
                     <div id="icons">
                         <a href="mailto:mandala@wisc.edu" class="contact-btn">
@@ -220,8 +230,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
        $('.nav a').on('click', function(){
-          $(".btn-navbar").click(); 
-          $(".navbar-toggle").click()
+          $('.navbar-collapse').collapse('hide');
         });
        
        $(document).ready(function() {

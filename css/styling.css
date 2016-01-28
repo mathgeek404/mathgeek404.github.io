@@ -62,7 +62,6 @@ body{
   font-family: 'Quicksand', Ariel;
   font-weight: bold;
   line-height: 1.1;
-  font-size: 50px;
   color:white;
 }
 
@@ -70,18 +69,15 @@ body{
   text-align:center;
   font-family: 'Quicksand', Ariel;
   line-height: 1.1;
-  font-size: 42px;
   
   color:white;
 }
 
 .section h3 {
   font-family: 'Quicksand', Ariel;
-  font-size: 36px;
 }
 
 .section p {
-  font-size: 22px;
   font-weight: 300;
   line-height: 1.4;
   font-family: Calibri, Ariel;
@@ -211,7 +207,10 @@ body{
 
 
 #projects {
+   min-height: 50vh;
+   
    background-color: #999999;
+   
 }
 
 #portfolio {
@@ -221,8 +220,7 @@ body{
 #contact {
 
     min-height:30vh;
-    
-   background-color:#999999;
+    background-color:#999999;
 }
 
 #icons {
