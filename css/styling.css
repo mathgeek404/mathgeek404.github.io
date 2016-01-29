@@ -62,15 +62,14 @@ body{
   font-family: 'Quicksand', Ariel;
   font-weight: bold;
   line-height: 1.1;
-  color:white;
+
 }
 
 .section h2 {
   text-align:center;
   font-family: 'Quicksand', Ariel;
   line-height: 1.1;
-  
-  color:white;
+
 }
 
 .section h3 {
@@ -94,7 +93,7 @@ body{
   padding: 10px;
   background: rgba(222,222,222,0);
   color:black;
-  
+ 
   overflow:auto;
 }
 
@@ -132,6 +131,7 @@ body{
 	margin-top: 10%;
 	font-family: 'Open Sans', Arial;
 	
+	color:white;
 }
 
 #main .pic {
@@ -165,30 +165,35 @@ body{
 }
 
 #aboutme {
-   background-color: #777777;
+   /*background-color: #777777;*/
+   background-color: white;
 }
 
 .life-point {
     width:100%;
+    margin-top: 50px;
+    min-height: 150px;
     
     /*display: flex;*/
     overflow:hidden;
 }
 
 .point-image {
-    width: 100px;
+    width: 150px;
+    height: 150px;
     float:left;
-    
-    min-height: 100px;
-    margin: auto;
+}
+
+.point-image > img {
+	width:120px;
+	height:120px;
+	margin: 15px 15px 15px 15px;
 }
 
 .point-content {
-    
+    min-height: 150px;
     overflow:hidden;
     margin:auto;
-    border:2px dashed #ccc;
-    min-height:100px;
 }
 
 .point-content p {
@@ -197,7 +202,7 @@ body{
     /*font-size:1.5vw;*/
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
    .point-image { 
     float: none;
     margin:auto; 
@@ -206,21 +211,22 @@ body{
 
 
 
-#projects {
+#adventures {
    min-height: 50vh;
    
-   background-color: #999999;
+   /*background-color: #999999;*/
+   background-color: #ADD8E6;
    
 }
 
 #portfolio {
-   background-color:#777777;
+   /*background-color:#777777;*/
 }
 
 #contact {
 
     min-height:30vh;
-    background-color:#999999;
+    background-color:#ADD8E6;
 }
 
 #icons {
@@ -293,5 +299,6 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 20px;
+  background-color: #999999;
 }
 
