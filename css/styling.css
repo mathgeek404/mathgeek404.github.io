@@ -181,14 +181,8 @@ body{
 .point-image {
     width: 150px;
     height: 150px;
-    float:left;
 }
 
-.point-image > img {
-	width:120px;
-	height:120px;
-	margin: 15px 15px 15px 15px;
-}
 
 .point-content {
     min-height: 150px;
