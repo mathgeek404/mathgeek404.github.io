@@ -1,21 +1,19 @@
+/*Main HTML Parts*/
 body{
    margin: 0 0 0 0;
-        
-   background: url(../images/vista.jpg) no-repeat #E7E7E7;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   background-size: cover;
+   height: 100%;
 }
 
 .navbar-inverse, .footer-background{
-   background-color: #222222;
+   background-color: white;
    background-image: none;
 }
 
-#main_section{
-   padding-top: 100px;
-   padding-bottom: 20px;
+
+#main_body{
+	height: 100%;
+    padding-top: 50px;
+    
 }   
 
 .content {   
@@ -23,34 +21,237 @@ body{
    
    min-height: 500px;
    padding: 10px;
-   /*
-   color: inherit;
-   padding: 48px 0px;
-   border-radius: 6px;
-   padding-right: 60px;
-   padding-left: 60px;
-   padding-bottom: 20px;*/
 	
 }
 
-#main_section div {
-  box-sizing: border-box;
+
+#main_body div {
+  /*box-sizing: border-box;*/
 }
 
 
-.content-background {
+.background-clear {
+   /*opacity: 0.5;*/
+   background: rgba(51, 51, 51,0.75);
+}
+
+#attribution_tag {
+   position: absolute;
+   right: 0;
+   opacity: 1.0;
+}
+
+.center_element {
+   position: absolute;
+   margin: 0 auto;
+}
+
+
+/* Section formating */
+
+.section {
+    
+    min-height:100vh;
+	margin: 0 0 0 0;
+	padding: 1px;
+}
+
+
+.section h1 {
+  text-align:center;
+  font-family: 'Quicksand', Ariel;
+  font-weight: bold;
+
+}
+
+.section h2 {
+  text-align:center;
+  font-family: 'Quicksand', Ariel;
+
+}
+
+.section h3 {
+  font-family: 'Quicksand', Ariel;
+}
+
+
+.section p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+.section > div {
+  /*padding-bottom: 10px;*/
+}
+
+.section > .text-content {
+  padding: 10px;
+  background: rgba(222,222,222,0);
+  color:black;
+ 
+  overflow:auto;
+}
+
+/*Main section*/
+
+#main {
+	height:100vh;
+	width: 40%;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	
+    position:fixed;
+    float:left;
+    
+    background: black url(../images/vista.jpg) no-repeat center center scroll;
+    background-size: cover;
+  
+  /* background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   * */
+}
+
+
+#main .title {
+	margin-top: 10%;
+	font-family: 'Open Sans', Arial;
+	
+	color:white;
+}
+
+#main .pic {
+	border-radius: 50%;
+	margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    
+	background-image: url(../images/mypic.jpg);
+	background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+
+/* Other sections*/
+
+#other-sections {
+    width: 60%;
+    float:right;
+}
+
+
+
+#aboutme {
+   /*background-color: #777777;*/
+   background-color: white;
+}
+
+.life-point {
+    width:100%;
+    margin-top: 50px;
+    min-height: 150px;
+    
+    /*display: flex;*/
+    overflow:hidden;
+}
+
+.point-image {
+    width: 150px;
+    height: 150px;
+}
+
+
+.point-content {
+    min-height: 150px;
+    overflow:hidden;
+    margin:auto;
+}
+
+.point-content p {
+
+    font-size:16px;
+    /*font-size:1.5vw;*/
+}
+
+
+
+
+#adventures {
+   min-height: 50vh;
+   
+   /*background-color: #999999;*/
+   background-color: #ADD8E6;
+   
+}
+
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100%;
+}
+
+#portfolio {
+   /*background-color:#777777;*/
+}
+
+.position {
+	float:left;
+}
+
+.dates {
+	float: right;
+}
+
+#contact {
+
+    min-height:30vh;
+    background-color:#ADD8E6;
+}
+
+#icons {
+    width: 100%;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+
+
+.contact-btn {
+    display: inline-block;
+    vertical-align: top;
+    
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    
+    text-decoration:none;
+}
+
+
+.content_background {
    position: absolute;
    width: 100%;
-   height:100%;
-   color:black;
+   background-color: rgba(0,0,0,0.5);;
+   
 }
 
-.content-background:after {
-   background-color: black;
+.content_background:after {
    opacity: 0.5;
 }
 
-
+/* Portfolio content */
 .hack-bullet {
   position: relative;
 }
@@ -71,13 +272,14 @@ body{
 }
 
 
-
-/* Sticky Footer */
+  
+  /* Sticky Footer */
 
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 20px;
@@ -88,63 +290,68 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 20px;
-}
-
-
-
-.background-clear {
-   /*opacity: 0.5;*/
-   background: rgba(51, 51, 51,0.75);
-}
-
-#attribution_tag {
-   position: absolute;
-   right: 0;
-   opacity: 1.0;
-}
-
-.center_element {
-   position: absolute;
-   margin: 0 auto;
-}
-
-
-/* Tabbing */
-
-.tab {
-   display: none;
-}
-
-.tab-active {
-   display: block;
-}
-
-.tab h1 {
-  text-align:center;
-  font-family: inherit;
-  font-weight: bold;
-  line-height: 1.1;
+  background-color: #999999;
   
-  color:white;
 }
 
-.tab p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
-  
-  text-align: justify;
-  text-justify: auto;
-}
 
-.tab > div {
-  padding-bottom: 10pxc
-}
 
-.tab > .text-content {
-  padding: 10px;
-  background: rgba(222,222,222,0.5);
-  color:black;
-  
-  overflow:auto;
-}
+/* Responsive Design */
+
+/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+		#other-sections {
+			position: relative;
+			width: 100%;
+			float: none;
+		}
+		
+		#main { 
+			position: relative;
+			width:100%;
+			float: none; 
+		}
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+		
+		.media-left { 
+			float: none;
+			display: block; 
+		}
+		
+		.point-image {
+			float:none;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+		
+		#photos {
+			-moz-column-count:    2;
+			-webkit-column-count: 2;
+			column-count:         2;
+		}
+		
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+	
+		#photos {
+			-moz-column-count:    1;
+			-webkit-column-count: 1;
+			column-count:         1;
+		}
+ 
+	}
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px){
+ 
+	}
+
