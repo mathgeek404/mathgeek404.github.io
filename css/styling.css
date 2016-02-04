@@ -61,14 +61,12 @@ body{
   text-align:center;
   font-family: 'Quicksand', Ariel;
   font-weight: bold;
-  line-height: 1.1;
 
 }
 
 .section h2 {
   text-align:center;
   font-family: 'Quicksand', Ariel;
-  line-height: 1.1;
 
 }
 
@@ -76,11 +74,8 @@ body{
   font-family: 'Quicksand', Ariel;
 }
 
+
 .section p {
-  font-weight: 300;
-  line-height: 1.4;
-  font-family: Calibri, Ariel;
-  
   text-align: justify;
   text-justify: auto;
 }
@@ -190,8 +185,33 @@ body{
    
 }
 
+#photos {
+  /* Prevent vertical gaps */
+  line-height: 0;
+   
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;  
+}
+
+#photos img {
+  /* Just in case there are inline attributes */
+  width: 100%;
+}
+
 #portfolio {
    /*background-color:#777777;*/
+}
+
+.position {
+	float:left;
+}
+
+.dates {
+	float: right;
 }
 
 #contact {
@@ -280,11 +300,6 @@ body {
 
 /* Large Devices, Wide Screens */
 	@media only screen and (max-width : 1200px){
-		
-	}
- 
-	/* Medium Devices, Desktops */
-	@media only screen and (max-width : 992px){
 		#other-sections {
 			position: relative;
 			width: 100%;
@@ -298,6 +313,10 @@ body {
 		}
 	}
  
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+	}
+ 
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px){
 		
@@ -308,7 +327,14 @@ body {
 		
 		.point-image {
 			float:none;
-			margin:auto;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+		
+		#photos {
+			-moz-column-count:    2;
+			-webkit-column-count: 2;
+			column-count:         2;
 		}
 		
 	}
@@ -316,7 +342,11 @@ body {
 	/* Extra Small Devices, Phones */
 	@media only screen and (max-width : 480px){
 	
-	
+		#photos {
+			-moz-column-count:    1;
+			-webkit-column-count: 1;
+			column-count:         1;
+		}
  
 	}
  
