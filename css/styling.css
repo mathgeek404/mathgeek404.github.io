@@ -301,23 +301,22 @@ body {
 	/* Small Devices, Tablets */
 	@media only screen and (max-width : 768px){
 		
-	
+		.media-left { 
+			float: none;
+			display: block; 
+		}
+		
+		.point-image {
+			float:none;
+			margin:auto;
+		}
+		
 	}
  
 	/* Extra Small Devices, Phones */
 	@media only screen and (max-width : 480px){
 	
-		/* .media { 
-			margin:auto;
-			display: inline-block; 
-		}
-		*/
 	
-		.media-left { 
-			float: none;
-			margin: auto;
-			display: inline-block; 
-		}
  
 	}
  
