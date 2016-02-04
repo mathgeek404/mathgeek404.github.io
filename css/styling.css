@@ -117,15 +117,6 @@ body{
    * */
 }
 
-@media screen and (max-width: 1000px) {
-   #main { 
-    width:100%;
-    
-    float: none;
-    position: relative; 
-    
-  }
-}
 
 #main .title {
 	margin-top: 10%;
@@ -154,15 +145,7 @@ body{
     float:right;
 }
 
-@media screen and (max-width: 1000px) {
-  #other-sections {
-    float: none;
-    
-    width: 100%;
-    position: relative;
-    
-  }
-}
+
 
 #aboutme {
    /*background-color: #777777;*/
@@ -196,12 +179,6 @@ body{
     /*font-size:1.5vw;*/
 }
 
-@media screen and (max-width: 720px) {
-   .point-image { 
-    float: none;
-    margin:auto; 
-  }
-}
 
 
 
@@ -294,5 +271,58 @@ body {
   /* Set the fixed height of the footer here */
   height: 20px;
   background-color: #999999;
+  
 }
+
+
+
+/* Responsive Design */
+
+/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+		
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+		#other-sections {
+			position: relative;
+			width: 100%;
+			float: none;
+		}
+		
+		#main { 
+			position: relative;
+			width:100%;
+			float: none; 
+		}
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+		
+	
+	}
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+	
+		/* .media { 
+			margin:auto;
+			display: inline-block; 
+		}
+		*/
+	
+		.media-left { 
+			float: none;
+			margin: auto;
+			display: inline-block; 
+		}
+ 
+	}
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px){
+ 
+	}
 
