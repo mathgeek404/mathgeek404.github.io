@@ -94,6 +94,17 @@ body{
 
 /*Main section*/
 
+/* ---- particles.js container ---- */
+
+#particles-js{
+  height: 100%;
+  width: 100%;
+  background-color: black /*#3284BF*/;
+  background-image: url('');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 #main {
 	height:100vh;
 	width: 40%;
@@ -104,17 +115,16 @@ body{
     position:fixed;
     float:left;
     
-    background: black url(../images/vista.jpg) no-repeat center center scroll;
+    /*background: black url(../images/vista.jpg) no-repeat center center scroll;
     background-size: cover;
-  
-  /* background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;
-   * */
+    */
 }
 
 
 #main .title {
+	position: absolute;
+	width: 100%;
+	top: 0;
 	margin-top: 10%;
 	font-family: 'Open Sans', Arial;
 	
